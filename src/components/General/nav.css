@@ -1,0 +1,136 @@
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0rem 5%; */
+    background: transparent;
+}
+
+.header-nav .logo {
+    width: 5rem;
+    height: 5rem;
+
+    /* margin-top: -3rem; */
+
+}
+
+.header-nav .logo img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.header-nav .navbar {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: transparent;
+}
+
+.header-nav .navbar li {
+    list-style: none;
+    background: transparent;
+}
+
+.header-nav .navbar li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #28285b;
+    background: transparent;
+}
+
+.header-nav .navbar li a:hover,
+.header-nav .navbar li a.active {
+    border-bottom: 2px solid;
+    padding-bottom: 0.2rem;
+}
+
+.toggle {
+    display: none;
+}
+
+/* Respoinsive design */
+
+@media(max-width:860px) {
+    .header-nav .logo {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .header-nav .navbar li a {
+        font-size: 1rem;
+    }
+
+
+}
+
+
+@media(max-width:690px) {
+    .header-nav {
+        /* margin: 0; */
+        background: #9ddef6;
+        /* box-shadow: 0 0.1rem 0.2rem #28285b; */
+
+    }
+
+    .header-nav .navbar {
+        display: none;
+    }
+
+    .header-nav .navbar li {
+        margin-bottom: 20px;
+    }
+
+    .toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        color: #28285b;
+        font-size: 1.5rem;
+        position: absolute;
+        right: 3.5rem;
+        top: 0.8rem;
+    }
+
+    .mobile-nav {
+        position: absolute;
+        top: 10vh;
+        right: 2rem;
+        width: 30%;
+        color: #28285b;
+        background: #9ddef6;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0 0.2rem 0.3rem #28285b;
+        /* transition: all 0.3s linear; */
+    }
+
+    li {
+        padding: 0.7rem;
+        list-style: none;
+        background: transparent;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        background: transparent;
+    }
+}
+
+@media (max-width:520px) {
+
+    .mobile-nav {
+        width: 45%;
+    }
+
+}
+
+@media (max-width:350px) {
+
+    .mobile-nav {
+        width: 80%;
+    }
+
+}

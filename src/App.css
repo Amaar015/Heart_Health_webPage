@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s linear;
+    /* background: #ffffff; */
+    color: #28285b;
+}
+
+.btn {
+    font-size: 1.6erm;
+    font-weight: 600;
+    width: 8rem;
+    color: #4747af;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #4747af;
+    transition: all 0.3s linear;
+}
+
+.btn:hover {
+    background: #4747af;
+    color: white;
+}
+
+div .introducing {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0.5rem auto;
+    width: 500px;
+    font-weight: 600;
+    line-height: 2.3rem;
+
+}
