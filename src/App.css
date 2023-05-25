@@ -28,18 +28,30 @@
 }
 
 div .introducing {
-    text-align: center;
     font-size: 1.3rem;
     font-weight: lighter;
     text-transform: uppercase;
 }
 
 .heading {
-    text-align: center;
+
     font-size: 2.5rem;
-    margin: 0.5rem auto;
     width: 500px;
     font-weight: 600;
     line-height: 2.3rem;
 
+}
+
+@media(max-width:540px) {
+    .heading {
+        font-size: 2rem;
+        width: 90%;
+    }
+}
+
+@media(max-width:380px) {
+    .heading {
+        font-size: 1.6rem;
+        width: 95%;
+    }
 }

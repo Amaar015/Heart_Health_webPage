@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Dr Ayesha Alvi",
+        "experience": "3 years",
+        "specialist": "Childrens",
+        "field1": "Eye",
+        "field2": "Nose",
+        "field3": "Mouth",
+        "image": "images/d1.jpg"
+    },
+    {
+        "name": "Dr Naveed Memon",
+        "experience": "4 years",
+        "specialist": "Men",
+        "field1": "Skin",
+        "field2": "Sychologist",
+        "field3": "Sugar",
+        "image": "images/doc.jpg"
+    },
+    {
+        "name": "Dr Komal Maheshwari",
+        "experience": "4 years",
+        "specialist": "Women",
+        "field1": "Surgery",
+        "field2": "Medicine",
+        "field3": "Skin",
+        "image": "images/doct-4.jpg"
+    },
+    {
+        "name": "Dr John Abass",
+        "experience": "2 years",
+        "specialist": "Children",
+        "field1": "Physician",
+        "field2": "Neurologist",
+        "field3": "Skin",
+        "image": "images/d2.jpg"
+    }
+]

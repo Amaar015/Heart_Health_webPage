@@ -155,6 +155,20 @@
 
 
 /* consultant */
+.home-consultant {
+    margin-top: 4rem;
+}
+
+div.home-c .introducing {
+    text-align: center;
+}
+
+.home-c .heading {
+    text-align: center;
+    margin: 0.5rem auto;
+
+}
+
 .consult-home {
     padding: 2rem 7%;
     display: flex;
@@ -163,4 +177,177 @@
     flex-wrap: wrap;
     gap: 2rem;
 
+}
+
+.consult-home .consult-image {
+    flex: 1 1 30rem;
+}
+
+.consult-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.consult-home .consult-content {
+    flex: 1 1 30rem;
+}
+
+.consult-content .consult-heading {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 2.4rem;
+
+}
+
+.consult-content p {
+    font-size: 1.14rem;
+    margin-top: 0.5rem;
+}
+
+.consultant {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 6rem;
+}
+
+.consult-content .btn {
+    margin-top: 1rem;
+}
+
+@media(max-width:545px) {
+    .consult-content .consult-heading {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.9rem;
+    }
+}
+
+@media(max-width:350px) {
+    .consult-content .consult-heading {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+}
+
+@media(max-width:490px) {
+
+    .consult-content p {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .consultant {
+        gap: 2rem;
+    }
+
+}
+
+@media(max-width:370px) {
+    .consultant {
+        gap: 0.5rem;
+    }
+}
+
+@media(max-width:332px) {
+    .consultant {
+        flex-direction: column;
+    }
+}
+
+
+
+/* department */
+
+div.home-d .introducing {
+    padding-left: 7%;
+}
+
+div.home-d .heading {
+    padding-left: 7%;
+    width: 650px;
+    margin: none !important;
+}
+
+.department-content {
+    flex: 1 1 30rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    flex-direction: row;
+}
+
+.box {
+    width: 200px;
+    margin-top: 0.5rem;
+}
+
+.box .icon {
+    font-size: 2.2rem;
+}
+
+
+@media(max-width:540px) {
+    div.home-d .heading {
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    .consult-home {
+        padding: 1rem 4%;
+    }
+
+    .department-content {
+        gap: 1rem;
+    }
+}
+
+@media(max-width:380px) {
+    div.home-d .heading {
+        font-size: 1.6rem;
+        width: 95%;
+    }
+}
+
+
+/* teams  */
+
+.home-d a>button {
+    position: absolute;
+    right: 10rem;
+    top: auto;
+    margin-top: -2rem;
+}
+
+
+/* Team Card */
+
+.card-box {
+    padding: 4rem 7%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.cards {
+    /* flex: 1 1 30rem; */
+    width: 220px !important;
+    height: 300px;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.cards img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
 }
