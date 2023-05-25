@@ -163,8 +163,8 @@ const Header = () => {
                                 <h4>{doct.name}</h4>
                                 <h5>Exp: {doct.experience} | Spec: {doct.specialist} </h5>
                                 <p>
-                                    <span>{doct.field1}</span>
-                                    <span>{doct.field2}</span>
+                                    <span>{doct.field1}</span>|
+                                    <span>{doct.field2}</span>|
                                     <span>{doct.field3}</span>
                                 </p>
                             </div>
