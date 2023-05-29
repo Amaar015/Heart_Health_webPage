@@ -15,6 +15,11 @@ import { GiKidneys, GiNoseFront } from 'react-icons/gi'
 import { BiBody } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import doctor from '../Data/doctors';
+import Testnomial from '../Testnomials/Testnomial';
+import blog1 from '../../images/dp3.jpg';
+import blog2 from '../../images/dp-4.jpg';
+import { data } from '../Data/department'
+
 const Header = () => {
     return (
         <>
@@ -174,6 +179,42 @@ const Header = () => {
 
 
             </div >
+            <Testnomial />
+
+            <div className="latest">
+                <div className="latest-blog">
+                    <div className="latest-box ">
+                        <h4>Latest</h4>
+                        <h2>Latest Post from our Blog</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, ipsam cupiditate doloremque perspiciatis voluptatum omnis veniam voluptatem exercitationem totam assumenda, unde ullam. Dolorum voluptatum eos nam! Beatae, veniam dolorum. Tenetur.</p>
+                        <button className="btn">Learn more</button>
+                    </div>
+                    <div className="latest-box box1">
+                        <img src={blog1} alt="" />
+                        <h2>Latest Post from our Blog</h2>
+                        <p>Assumenda, unde ullam. Dolorum voluptatum eos nam! Beatae, veniam dolorum. Tenetur.</p>
+                    </div>
+                    <div className="latest-box box2">
+                        <img src={blog2} alt="" />
+                        <h2>Latest Post from our Blog</h2>
+                        <p>Assumenda, unde ullam. Dolorum voluptatum eos nam! Beatae, veniam dolorum. Tenetur.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="wrapper">
+                <div className="accordian">
+                    {data.map((item, i) => {
+
+                        <div className="item">
+                            <div className="title">
+                                <h2>{item.question}</h2>
+                            </div>
+                        </div>
+
+                    })}
+                </div>
+            </div>
         </>
     )
 }
