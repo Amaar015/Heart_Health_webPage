@@ -18,9 +18,29 @@ import doctor from '../Data/doctors';
 import Testnomial from '../Testnomials/Testnomial';
 import blog1 from '../../images/dp3.jpg';
 import blog2 from '../../images/dp-4.jpg';
-import { data } from '../Data/department'
+import data from '../Data/department'
 
 const Header = () => {
+    const Accordian = () => {
+        const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+        accordionItemHeaders.forEach(accordionItemHeader => {
+            accordionItemHeader.addEventListener("click", event => {
+
+
+                accordionItemHeader.classList.toggle("active");
+                const accordionItemBody = accordionItemHeader.nextElementSibling;
+                if (accordionItemHeader.classList.contains("active")) {
+                    accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+                }
+                else {
+                    accordionItemBody.style.maxHeight = 0;
+                }
+
+            });
+        });
+
+    }
     return (
         <>
             <div className="header">
@@ -203,16 +223,35 @@ const Header = () => {
             </div>
 
             <div className="wrapper">
-                <div className="accordian">
-                    {data.map((item, i) => {
+                {/* <div className="accordian"> */}
+                <div className="content">
+                    <h1>Frequently Ask Question</h1>
+                    <div className="accordion">
+                        {data.map((item, i) => (
+                            <div className="accordion-item">
+                                <div className="accordion-item-header" onClick={Accordian}>
+                                    {item.question}
+                                </div>
+
+                                <div className="accordion-item-body">
+                                    <div className="accordion-item-body-content">
+                                        {item.answer}
+                                    </div>
+                                </div>
+
+                            </div>
+                        ))}
+
+                        {/* {data.map((item, i) => (
 
                         <div className="item">
                             <div className="title">
                                 <h2>{item.question}</h2>
                             </div>
-                        </div>
+                        
 
-                    })}
+                    ))} */}
+                    </div>
                 </div>
             </div>
         </>
